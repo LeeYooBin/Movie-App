@@ -30,10 +30,6 @@ export default class Home extends React.Component {
         contentList: trending
     });
   }
-  handleSearchChange = event => {
-    const contentFilter = this.state.content.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase()));
-    this.setState({contentList: contentFilter});
-  };
 
   render(){
     return(
